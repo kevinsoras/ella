@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabla</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="script/java.js"></script>
+</head>
+<body>
+    <div id="caja1">  
+    <select id="canasta" onclick="rellenar()">
+        <option disabled selected>
+        Escoje
+        </option>
+        <option  id="arroz" value="Arroz">
+        Arroz
+        </option>
+        <option  id="azucar" value="Azucar">
+        Azucar
+        </option>
+        <option id="papa" value="Papa">
+        Papa
+        </option>
+        <option id="camote" value="Camote">
+        Camote
+        </option>
+        <option id="cebolla" value="Cebolla">
+        Cebolla
+        </option>
+        </select>
+        <div id="caja2">
+        <table id="compra">
+            <thead id="compra2">
+                <th><input id="pro" type="text" disabled></th>
+                <th><input id="pre" type="text" disabled></th>
+                <th><input  onmouseout="rellenar()" id="cantidad"></th>
+                <th><input  id="sub" type="text" disabled></th>
+                
+                 <td><button onclick="compra()" id="bot" >Agregar</button></td>
+                 <td><button onclick="modificar()" id="bot" >Modificar</button></td>
+                
+            </thead>
+            
+            </table>
+        </div>
+        <div id="caja3"></div>
+        <table id="productos">
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th colspan="2">Botones</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="pie">
+        <p style="color: white">IGV<input  type="text"id="igv"></p>    
+    </div>
+</body>
+</html>
